@@ -239,7 +239,7 @@ function FolderCardsSection() {
     style: {
       width: '100%',
       background: V,
-      overflow: 'hidden',
+      overflow: 'visible',
       margin: 0,
       padding: isMobile ? '32px 0 40px' : '48px 0 64px',
       display: 'flex',
@@ -254,9 +254,10 @@ function FolderCardsSection() {
         justifyContent: 'center',
         gap: isMobile ? '32px' : '24px',
         width: '100%',
-        maxWidth: 1280,
+        maxWidth: 1320,
         margin: '0 auto',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        overflow: 'visible'
       },
       children: [1, 2, 3].map(function(num) {
         return (0, x.jsx)('iframe', {
@@ -266,7 +267,7 @@ function FolderCardsSection() {
           scrolling: 'no',
           style: {
             width: isMobile ? '100%' : '380px',
-            height: '520px',
+            height: '700px',
             border: 'none',
             background: 'transparent',
             display: 'block',
