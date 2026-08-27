@@ -241,23 +241,40 @@ function FolderCardsSection() {
       background: V,
       overflow: 'hidden',
       margin: 0,
-      padding: isMobile ? '24px 0 40px' : '32px 0 48px',
+      padding: isMobile ? '32px 0 40px' : '48px 0 64px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center'
     },
-    children: (0, x.jsx)('iframe', {
-      src: '/assets/folder-cards/index.html',
-      title: 'Folder Cards',
-      scrolling: 'no',
+    children: (0, x.jsx)('div', {
       style: {
+        display: 'flex',
+        flexDirection: isMobile ? 'column' : 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: isMobile ? '32px' : '24px',
         width: '100%',
-        maxWidth: 1200,
-        height: isMobile ? 1320 : 500,
-        border: 'none',
-        background: 'transparent',
-        display: 'block'
-      }
+        maxWidth: 1280,
+        margin: '0 auto',
+        boxSizing: 'border-box'
+      },
+      children: [1, 2, 3].map(function(num) {
+        return (0, x.jsx)('iframe', {
+          key: 'folder-card-' + num,
+          src: '/assets/folder-cards/index.html',
+          title: 'Folder Card ' + num,
+          scrolling: 'no',
+          style: {
+            width: isMobile ? '100%' : '380px',
+            height: '520px',
+            border: 'none',
+            background: 'transparent',
+            display: 'block',
+            overflow: 'visible',
+            flexShrink: 0
+          }
+        });
+      })
     })
   });
 }
