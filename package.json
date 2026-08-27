@@ -1,0 +1,23 @@
+{
+  "name": "interkace-studio-website",
+  "version": "1.0.0",
+  "description": "Interkace Studio - Web Design & Digital Experience Studio for Small & Local Businesses",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "interkace-studio",
+    "web-design",
+    "digital-experience",
+    "landing-page"
+  ],
+  "author": "Interkace Studio",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

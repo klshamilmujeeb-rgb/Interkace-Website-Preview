@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap');
+
+.just-another-hand-regular {
+  font-family: "Just Another Hand", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+/* Enhanced body & cursive scaling */
+
+
+
+:root{--color-brand:#ff4405;--color-brand-hover:#e53d04;--color-brand-purple:#6941c6;--color-brand-section:#53389e;--color-text-primary:#181d27;--color-text-secondary:#414651;--color-text-tertiary:#535862;--color-text-quaternary:#717680;--color-text-white:#fff;--color-text-brand:#6941c6;--color-bg-primary:#fff;--color-bg-secondary:#fafafa;--color-border-primary:#d5d7da;--color-border-secondary:#e9eaeb;--color-success-bg:#dcfae6;--color-success-text:#067647;--color-warning-bg:#fef0c7;--color-warning-text:#b54708;--color-error-bg:#fee4e2;--color-error-text:#b42318;--color-info-bg:#eff8ff;--color-info-text:#175cd3;--shadow-xs:0px 1px 2px 0px #0a0d120d;--shadow-sm:0px 1px 3px 0px #0a0d121a, 0px 1px 2px 0px #0a0d120f;--shadow-md:0px 4px 8px -2px #0a0d121a, 0px 2px 4px -2px #0a0d120f;--shadow-lg:0px 12px 16px 0px #0a0d1214, 0px 4px 6px 0px #0a0d1208, 0px 2px 2px 0px #0a0d120a;--shadow-skeuomorphic:0px 1px 2px 0px #0a0d120d, inset 0px -2px 0px 0px #0a0d120d, inset 0px 0px 0px 1px #0a0d122e;--radius-sm:6px;--radius-md:8px;--radius-lg:10px;--radius-xl:12px;--radius-2xl:16px;--radius-full:9999px}*,:before,:after{box-sizing:border-box;margin:0;padding:0}body{color:var(--color-text-primary);background-color:var(--color-bg-secondary);-webkit-font-smoothing:antialiased;font-family:Inter,sans-serif;font-size:14px}#root{min-height:100vh}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+html, body {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+
+/* Ultra-Smooth Performance & Rendering System */
+html {
+  scroll-behavior: smooth !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+/* GPU Accelerated Layers */
+.fluid-carousel-track,
+.draggable-carousel-track,
+.folder-cards-container,
+.video-card,
+.main-nav-pill,
+#whatsapp-eye-cta,
+.interkace-eye-btn-wrapper {
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+  transform: translateZ(0) !important;
+}
+
+/* Optimize scroll performance */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.handwritten-body {
+  font-family: "Just Another Hand", cursive !important;
+  font-size: 1.4em !important;
+  letter-spacing: 0.5px !important;
+  line-height: 1.25 !important;
+}
+
+/* Ensure navbar, buttons, and footer maintain clean original typography */
+nav, nav a, nav button, .navbar, .navbar a, .cta-button, footer, footer a, footer p, button, a[href*="calendar"], a[href*="contact"] {
+  font-family: 'Urbanist', 'Inter', -apple-system, sans-serif !important;
+}
